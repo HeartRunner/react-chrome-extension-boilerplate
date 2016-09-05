@@ -1,16 +1,12 @@
 # React Chrome Extension Boilerplate
 
-[![Build Status](https://travis-ci.org/jhen0409/react-chrome-extension-boilerplate.svg?branch=master)](https://travis-ci.org/jhen0409/react-chrome-extension-boilerplate)
-[![Build status: Windows](https://ci.appveyor.com/api/projects/status/b5xy6ev6oykth0d2/branch/master?svg=true)](https://ci.appveyor.com/project/jhen0409/react-chrome-extension-boilerplate/branch/master)
-[![NPM version](http://img.shields.io/npm/v/react-chrome-extension-boilerplate.svg?style=flat)](https://www.npmjs.com/package/react-chrome-extension-boilerplate)
-[![Dependency Status](https://david-dm.org/jhen0409/react-chrome-extension-boilerplate.svg)](https://david-dm.org/jhen0409/react-chrome-extension-boilerplate)
-[![devDependency Status](https://david-dm.org/jhen0409/react-chrome-extension-boilerplate/dev-status.svg)](https://david-dm.org/jhen0409/react-chrome-extension-boilerplate#info=devDependencies)
+> Boilerplate for Chrome Extension React.js project. With synced actions and reducers support!
 
-> Boilerplate for Chrome Extension React.js project.
+This is a forked project, the goal is to build a chrome plugin boilerplate with synced and perfomant redux stores.
 
 ## Features
-
  - Simple [React](https://github.com/facebook/react)/[Redux](https://github.com/rackt/redux) examples of Chrome Extension Window & Popup & Inject pages
+ - Actions can be synced across active windows! (Insipred by react-chrome-redux)
  - Hot reloading React/Redux (Using [Webpack](https://github.com/webpack/webpack) and [React Transform](https://github.com/gaearon/react-transform))
  - Write code with ES2015+ syntax (Using [Babel](https://github.com/babel/babel))
  - E2E tests of Window & Popup & Inject pages (Using [Chrome Driver](https://www.npmjs.com/package/chromedriver), [Selenium Webdriver](https://www.npmjs.com/package/selenium-webdriver))
@@ -18,6 +14,12 @@
 ## Examples
 
 The example is edited from [Redux](https://github.com/rackt/redux) TodoMVC example.
+
+#### Synced Actions
+
+![Synced](https://raw.githubusercontent.com/xiaobuu/react-chrome-extension-boilerplate/gh-pages/imgs/mainshot.gif)
+
+You can define which actions will be synced by simply add a key on your action
 
 #### Popup
 
@@ -39,7 +41,7 @@ The inject script is being run by [chrome/extension/background/inject.js](chrome
 
 ```bash
 # clone it
-$ git clone https://github.com/jhen0409/react-chrome-extension-boilerplate.git
+$ git clone https://github.com/xiaobuu/react-chrome-extension-boilerplate.git
 
 # Install dependencies
 $ npm install
